@@ -23,8 +23,10 @@ term=""
 help() {
   >&2 echo 'usage: fzf-tmux [OPTIONS] [--] [FZF OPTIONS]
 
+  (default layout: -d 50%)
+
   Popup window:
-    -p [WIDTH[%][,HEIGHT[%]]]  (default: 50% / centered)
+    -p [WIDTH[%][,HEIGHT[%]]]  (default: 50%)
     -w WIDTH[%]
     -h HEIGHT[%]
     -x COL
@@ -32,7 +34,7 @@ help() {
 
   Split pane:
     -u [HEIGHT[%]]             Split above (up)
-    -d [HEIGHT[%]]             Split below (down) (default)
+    -d [HEIGHT[%]]             Split below (down)
     -l [WIDTH[%]]              Split left
     -r [WIDTH[%]]              Split right
 '
